@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume CRAFT</title>
+  <link href="css/style.css" rel="stylesheet" id="style_css" />
+  <script src="js/script.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</head>
+
+<body id="body" onload="darkMode(event)">
+
+  <nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <a class="navbar-brand" href="#">Resume CRAFT</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navtop">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navtop">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="select_template.html">Templates</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="dark_link_1" href="#" onclick="darkMode(event)">Dark Mode</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="select_template.html">Build My Resume</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="d1" class="row">
+    <div id="d2" class="col-md-6">
+      <div class="d-flex justify-content-center h-100">
+        <div class="text-center text-white">
+          <pre>Welcome To <br><h1>Resume CRAFT</h1></pre>
+          <p>Easily create a professional and personalized resume in 15 minutes.
+            Choose from various themes,explore dark
+            mode, and make your resume stand out. Get started now!</p>
+          <button class="btn btn-light" id="build_resume_btn" onclick="window.open('select_template.html','_self')">
+            Build Resume Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="d3" class="col-md-6">
+      <div class="d-flex justify-content-center h-100">
+        <div class="text-center">
+          <div>
+            <img src="images/sample_resume.avif" id="sample-resume" alt="" height="500px">
+          </div>
+          <div id="up_benefit">
+            <img src="images/line-chart.png" alt="" height="50px">
+            <p>Make your chances to get selected higher</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="benefits" class="row">
+    <div id="b1" class="col-md-6">
+      <img src="images/approved.png" id="bi1" alt="Image not Found" height="100px">
+      <div>Make your new and professional reusme easily in 15 minutes</div>
+    </div>
+    <div id="b2" class="col-md-6">
+      <img src="images/education.png" id="bi2" alt="Image not Found" height="100px">
+      <div>Enter your education details and add as many fields you want</div>
+    </div>
+    <div id="b3" class="col-md-6">
+      <img src="images/important.png" id="bi3" alt="Image not Found" height="100px">
+      <div>Recruiter can easily find your key points</div>
+    </div>
+    <div id="b4" class="col-md-6">
+      <img src="images/job.png" id="bi4" alt="Image not Found" height="100px">
+      <div>Make higher your chances of getting the job secured</div>
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 section">
+          <h4>Resume CRAFT</h4>
+          <p>Resume CRAFT is a user-friendly platform designed to simplify the process of creating professional
+            resumes. Users can leverage our intuitive interface to craft personalized resumes tailored to their needs.
+          </p>
+        </div>
+        <div class="col-md-4 section">
+          <h5>Site Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="select_template.html">Templates</a></li>
+            <li><a href="#" id="dark_link_2" onclick="darkMode(event)">Dark Mode</a></li>
+            <li><a href="select_template.html">Build My Resume</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 section">
+          <h5>Contact Information</h5>
+          <ul class="list-unstyled">
+            <li>Email: <a href="mailto:ketulpatel642@gmail.com">ketulpatel642@gmail.com</a></li>
+            <li>Mobile: <a href="tel:+916352050223">+91 6352050223</a></li>
+            <li><a href="#">Instagram</a> </li>
+            <li><a href="#">Facebook</a> </li>
+            <li><a href="#">WhatsApp</a> </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="text-center">
+        <p>Copyright &copy; 2024. All rights reserved.</p>
+        <p>Designed by <span>Ketul Patel</span>. Thank you for visiting!</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 
+    1] To select a name for the project => Resume Craft => DONE
+    3] To re-design the home page => DONE
+    2] To make a logo => DONE
+    4] Add some already build resume gallery (Home Page) => DONE
+    12] Suggest some youtube videos to help user to understand how to make a resume. (Home Page) => DONE
+
+    7] Show concurrent changes while editing the resume
+    8] Export Options: Offer various export formats such as PDF, 
+    Word, or HTML to cater to different user preferences and application requirements.
+    9] AI-Powered Suggestions: Utilize AI algorithms to provide personalized 
+    suggestions for resume improvements based on industry trends or job requirements.
+    10] Feedback Mechanism: Incorporate a feedback system where users can
+    receive constructive feedback on their resumes from peers or industry experts.
+    (Allow users to upload their resume on website so that experts can review them and give suggestions)
+   -->
+
+</body>
+
+</html>

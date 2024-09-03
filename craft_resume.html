@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Making Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/template1.css" id="css">
+    <link rel="stylesheet" href="css/build_resume.css">
+    <script src="js/build_resume.js"></script>
+    <script>
+        var selected_template = localStorage.getItem('selected_template');
+        var css = document.getElementById("css");
+        console.log(css.href)
+        if (selected_template != "template1") {
+            css.href = 'css/template2.css'
+        }
+    </script>
+</head>
+
+<body>
+    <div id="branding">
+        <div id="site-branding">
+            Resume Builder
+        </div>
+    </div>
+    <form>
+        <div class="container">
+            <div class="personal-details form">
+                <h2 class="text-center">Personal Details</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="fname" class="form-label">First Name</label>
+                        <input type="text" class="form-input" id="fname" required>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="lname" class="form-label">Last Name</label>
+                        <input type="text" class="form-input" id="lname">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="job-title" class="form-label">Job Title</label>
+                        <input type="text" class="form-input" id="job-title">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="phoneno" class="form-label">Phone No.</label>
+                        <input type="text" class="form-input" id="phoneno">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-input" id="email">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-input" id="address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-input" id="city">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="zip-code" class="form-label">Zip Code</label>
+                        <input type="text" class="form-input" id="zip-code">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="state" class="form-label">State</label>
+                        <input type="text" class="form-input" id="state">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="country" class="form-label">Country</label>
+                        <input type="text" class="form-input" id="country">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="professional-details form">
+                <h2 class="text-center">Professional Experience</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="position" class="form-label">Position Title</label>
+                        <input type="text" class="form-input" id="position" required>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="company-name" class="form-label">Company name</label>
+                        <input type="text" class="form-input" id="company-name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="pe-start" class="form-label">Start Date</label>
+                        <input type="date" class="form-input" id="pe-start">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="pe-end" class="form-label">End Date</label>
+                        <input type="date" class="form-input" id="pe-end">
+                    </div>
+                </div>
+                <div>
+                    <label for="work-summary" class="form-label">Work Summary</label>
+                    <textarea type="text" class="form-input" id="work-summary" rows="10" cols="30"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="educational-details form">
+                <h2 class="text-center">Educational Details</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="school-name" class="form-label">School Name</label>
+                        <input type="text" class="form-input" id="school-name" required>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="school-location" class="form-label">School Location</label>
+                        <input type="text" class="form-input" id="school-location">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="start" class="form-label">Start Date</label>
+                        <input type="date" class="form-input" id="start">
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="end" class="form-label">End Date</label>
+                        <input type="date" class="form-input" id="end">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="degree" class="form-label">Degree</label>
+                    <input type="text" class="form-input" id="degree">
+                </div>
+
+                <div>
+                    <label for="educational-summary" class="form-label">Description</label>
+                    <textarea type="text" class="form-input" id="educational-summary" rows="10" cols="30"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class=" container">
+            <div class="key-skills form">
+                <h2 class="text-center">Key Skills</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <label for="skill-item1" class="form-label">Skill 1 Name</label>
+                        <input type="text" class="form-input" id="skill-item1" required>
+                    </div>
+                    <div class="col-lg-6">
+                        <label for="skill-level1" class="form-label">Expertise</label>
+                        <input type="range" class="form-range" id="skill-level1" min="0" max="100" step="10" value="50">
+                        <output for="skill-level1" id="skill-level1-output">50</output>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 r1">
+                        <label for="skill-item2" class="form-label">Skill 2 Name (optional)</label>
+                        <input type="text" class="form-input" id="skill-item2" required>
+                    </div>
+                    <div class="col-lg-6 r2">
+                        <label for="skill-level2" class="form-label">Expertise</label>
+                        <input type="range" class="form-range" id="skill-level2" min="0" max="100" step="10" value="50">
+                        <output for="skill-level2" id="skill-level2-output">50</output>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="resume-summary form">
+                <h2 class="text-center">Summary</h2>
+                <hr>
+                <div>
+                    <label for="resume-summary" class="form-label">Description</label>
+                    <textarea type="text" class="form-input" id="resume_summary" rows="10" cols="30"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Preview Resume" class="btn btn-secondary"></input>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="container-fluid" id="resume_pdf">
+        <div class="pi1 row">
+            <div class="name col">
+                <div class="fname">
+                    Xyzzzz
+                </div>
+                <div class="lname">
+                    Xyzzzz
+                </div>
+            </div>
+            <div class="address col">
+                4759 Sunnydale Lane <br> Plano, TX 75071
+                <div class="email-div" id="out-email">
+                    email@youremail.com
+                </div>
+                <div class="phone-number">
+                    (469) 385-2948
+                </div>
+            </div>
+        </div>
+        <div class="job-title">
+            Human Resource Manager
+        </div>
+        <div class="summary">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, hic, quod, soluta provident eligendi
+            similique iusto et reiciendis suscipit dolores sint fugit omnis ipsum perferendis nam? Nobis aperiam rem
+            quas minus ipsum!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, hic, quod, soluta provident eligendi
+            similique iusto et reiciendis suscipit dolores sint fugit omnis ipsum perferendis nam? Nobis aperiam rem
+            quas minus ipsum!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid, hic, quod, soluta provident eligendi
+            similique iusto et reiciendis suscipit dolores sint fugit omnis ipsum perferendis nam? Nobis aperiam rem
+            quas minus ipsum!
+        </div>
+        <div class="professional-details">
+            <div class="professional-exp">
+                Professional Experience
+            </div>
+            <hr>
+
+            <div class="position">
+                <span class="posi-inner">
+                    Manager
+                </span>
+                |
+            </div>
+            <div class="company-name">
+                <span class="company-inner">
+                    xyzzzzz company
+                </span>
+                |
+            </div>
+            <div class="pe-dates">
+                <div class="pe-start">
+                    <span class="pe-start-inner">
+                        May 2024
+                    </span>
+                    -
+                </div>
+                <div class="pe-end">
+                    June 2024
+                </div>
+            </div>
+            <div class="job-desc">
+                Human resources generalist with 8 years of experience in HR, including hiring and terminating,
+                disciplining
+                employees and helping department managers improve employee performance. Worked with labor unions to
+                negotiate compensation packages for workers. Organized new hire training initiatives as well as ongoing
+                training to adhere to workplace safety standards. Worked with OSHA to ensure that all safety regulations
+                are
+                followed.
+            </div>
+        </div>
+
+        <div class="educational-details">
+            <div class="education">
+                Education
+            </div>
+            <hr>
+            <div class="degree">
+                <span class="degree-inner">
+                    Computer Engeneering
+                </span>
+                |
+            </div>
+            <div class="school-name">
+                <span class="school-inner">
+                    xyzzzzz school
+                </span>
+                |
+            </div>
+            <div class="dates">
+                <div class="start">
+                    <span class="start-inner">
+                        May 2024
+                    </span>
+                    -
+                </div>
+                <div class="end">
+                    June 2024
+                </div>
+            </div>
+            <div class="education-desc">
+                Human resources generalist with 8 years of experience in HR, including hiring and terminating,
+                disciplining
+                employees and helping department managers improve employee performance. Worked with labor unions to
+                negotiate compensation packages for workers. Organized new hire training initiatives as well as ongoing
+                training to adhere to workplace safety standards. Worked with OSHA to ensure that all safety regulations
+                are
+                followed.
+            </div>
+        </div>
+        <div class="key-skills">
+            <div class="skills">
+                Key Skills
+            </div>
+            <hr>
+            <div class="skill-item1">
+                HTML
+            </div>
+            <div class="level1 kl">
+                <div class="skill-level1" style="width:300px">
+                    <div class="skill-level-inner1" style="width:70%">70%</div>
+                </div>
+            </div>
+            <div class="skill-item2">
+                HTML
+            </div>
+            <div class="level2 kl">
+                <div class="skill-level2" style="width:300px">
+                    <div class="skill-level-inner2" style="width:70%">70%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="download-btn">
+        <button id="download-button" class="btn btn-dark" onclick="generatePDF()">Download Resume</button>
+    </div>
+
+    <div class="changes-btn">
+        <button id="changes-button" class="btn btn-dark" onclick="makeChanges()">Make Changes</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.1/html2pdf.bundle.min.js"></script>
+</body>
+
+</html>

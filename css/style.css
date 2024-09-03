@@ -1,0 +1,278 @@
+.navbar {
+    font-size: 2em !important;
+    background-color: white;
+}
+
+.row {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.navbar-brand {
+    font-size: 1.1em !important;
+    color: black !important;
+    margin: 0px 70px 0px 40px !important;
+    font-weight: bold !important;
+}
+
+.nav-link {
+    font-size: 0.8em !important;
+    margin: 0px 25px !important;
+    color: #8338ec !important;
+    font-weight: 600 !important;
+}
+
+.nav-link:hover {
+    color: black !important;
+    font-weight: 700 !important;
+}
+
+.navbar-toggler {
+    border-color: #8338ec !important;
+    margin-right: 20px !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 8px #8338ec !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 131, 56, 236, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+#d1,
+#benefits {
+    height: 41em;
+    width: 100%;
+}
+
+#d2 {
+    background-color: #8338ec;
+}
+
+#d2 h1 {
+    margin-top: -5px;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+#d2 p {
+    margin: 50px 20px 0px 20px;
+    font-size: 30px;
+}
+
+#d2 pre {
+    margin: 50px 20px 0px 20px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#d3 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#up_benefit {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #8338ec;
+    font-weight: 700;
+}
+
+#sample-resume {
+    max-width: 398px;
+}
+
+#build_resume_btn {
+    margin-top: 60px;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 15px 75px;
+    font-weight: bold;
+    color: #8338ec;
+    border: none !important;
+    outline: none !important;
+}
+
+#build_resume_btn:focus {
+    border: none;
+    box-shadow: 0 0 5px rgba(131, 56, 236, 0.5);
+}
+
+#build_resume_btn:hover {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: black;
+}
+
+#benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#benefits img {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: black;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+footer .section p {
+    margin-bottom: 0;
+    max-width: 300px;
+}
+
+footer .section {
+    margin-bottom: 20px;
+}
+
+footer a:hover{
+    color:lime;
+    font-weight: bold;
+}
+
+footer p span{
+    color:lime;
+    font-weight: 700;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark-mode,
+.dark-mode .navbar,
+.dark-mode #benefits,
+.dark-mode #d3 {
+    background-color: black !important;
+}
+
+.dark-mode #build_resume_btn {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.dark-mode #build_resume_btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.dark-mode #up_benefit img {
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+.dark-mode #benefits img {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+
+
+.dark-mode .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark-mode #d2 h1,
+.dark-mode #d2 p,
+.dark-mode #d2 pre {
+    color: black;
+}
+
+.dark-mode footer{
+    background-color: #8338ec;
+    color:black;
+}
+
+.dark-mode footer a{
+    color:black;
+}
+
+.dark-mode footer a:hover{
+    color:lime;
+}
+
+
+@media (max-width:1058px) {
+    #d2 h1 {
+        font-size: 50px;
+    }
+
+    #d2 p {
+        margin-top: 70px;
+        font-size: 20px;
+        max-width: 600px;
+    }
+
+    #build_resume_btn {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width:768px) {
+    #d1,
+    #benefits {
+        height: 80em !important;
+    }
+
+    #d2 p {
+        margin-top: 70px;
+    }
+
+    #build_resume_btn {
+        margin-top: 70px;
+    }
+
+    #sample-resume {
+        max-width: 328px;
+    }
+
+    #d2 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:400px){
+    #build_resume_btn{
+        font-size: 17px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:328px) {
+    #d2 h1 {
+        font-size: 40px;
+    }
+
+    #d2 p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    #build_resume_btn {
+        font-size: 15px;
+        padding: 15px 45px;
+    }
+
+    #sample-resume {
+        max-width: 228px;
+        height: 300px;
+    }
+
+    #up_benefits {
+        padding: 0px 10px;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/select_template.css">
+
+    <script>
+        var selected_template = null;
+        function goToBuildResume(template_name) {
+            selected_template = template_name
+            localStorage.setItem('selected_template', selected_template);
+            window.open('craft_resume.html', '_self');
+        }
+    </script>
+</head>
+
+<body>
+    <div id="branding">
+        <div id="site-branding">
+            Resume Builder
+        </div>
+    </div>
+    <div id="select-outer">
+        <h1>Select a Template</h1>
+        <div id="select-text">
+            Click on any 1 template from below and build your resume in minutes
+        </div>
+        <div id="options" class="row">
+            <div class="col-md-6" id="template1" onclick="goToBuildResume('template1')">
+                <img src="images/template1.png" alt="">
+            </div>
+            <div class="col-md-6" id="template2" onclick="goToBuildResume('template2')">
+                <img src="images/template2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

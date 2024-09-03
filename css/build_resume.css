@@ -1,0 +1,101 @@
+#branding {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+}
+
+#site-branding {
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 7px;
+    margin-left: 50px;
+}
+
+#main-div div {
+    height: 40.5em;
+}
+
+.form {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    background-color: black;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 100px auto !important;
+}
+
+.form-label {
+    font-weight: 550;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-input {
+    border: none;
+    padding: 15px 20px;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+@media (max-width:560px){
+    .form-input{
+        width:100%;
+    }
+
+    #site-branding{
+        font-size: 20px;
+    }
+}
+
+.form h2 {
+    color: white
+}
+
+.form hr {
+    border: 1px solid white;
+}
+
+.form-input:focus {
+    background-color: white;
+    outline: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03)
+}
+
+.download-btn button {
+    width: 250px;
+}
+
+.download-btn {
+    text-align: center;
+    margin: 30px;
+    display: none;
+}
+
+.changes-btn {
+    text-align: center;
+    display: none;
+    margin-bottom: 30px;
+}
+
+.changes-btn button {
+    width: 250px;
+}
+
+::placeholder {
+    font-weight: 600;
+    color: white;
+}
